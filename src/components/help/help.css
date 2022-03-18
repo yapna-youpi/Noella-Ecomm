@@ -9,7 +9,7 @@
 }
 .contact .info i {
   font-size: 20px;
-  color: #1bac91;
+  color: #59ab6e;
   float: left;
   width: 44px;
   height: 44px;
@@ -25,13 +25,13 @@
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 5px;
-  color: #21413c;
+  color: #1d6b31;
 }
 .contact .info p {
   padding: 0 0 0 60px;
   margin-bottom: 0;
   font-size: 14px;
-  color: #43857a;
+  color: #22863b;
 }
 .contact .info .email p {
   padding-top: 5px;
@@ -54,11 +54,11 @@
   margin-right: 10px;
 }
 .contact .info .social-links a:hover {
-  background: #1bac91;
+  background: #59ab6e;
   color: #fff;
 }
 .contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {
-  background: #1bac91;
+  background: #59ab6e;
   color: #fff;
 }
 .contact .php-email-form {
@@ -119,7 +119,7 @@
   padding: 10px 12px;
 }
 .contact .php-email-form button[type=submit] {
-  background: #1bac91;
+  background: #59ab6e;
   border: 0;
   padding: 10px 24px;
   color: #fff;
@@ -127,7 +127,7 @@
   border-radius: 4px;
 }
 .contact .php-email-form button[type=submit]:hover {
-  background: #22d8b6;
+  background: #7af097;
 }
 @-webkit-keyframes animate-loading {
   0% {

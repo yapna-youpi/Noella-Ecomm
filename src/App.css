@@ -5,10 +5,12 @@
 /*-------------------------------------------------------------
 root
 --------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
 :root{
   --sk-green: #00a654;
   --sk-greenhover:#048d48;
-  --sk-greenLight:#7bed9f;
+  --sk-greenLight:#59ab6e;
   --sk-orange: #f79323;
   --sk-black: #000;
   --sk-gray: rgba(22,22,22,0.7);
@@ -16,11 +18,14 @@ root
   --sk-aqua:aqua;
   --sk-aquamarine:aquamarine;
 }
+#map{
+  height: 276px;
+}
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: Roboto,'sans serif';
   color: #444444;
   scrollbar-width: 5px; /* "auto" or "thin" */
   scrollbar-color: var(--sk-green) var(--sk-orange); /* scroll thumb and track */

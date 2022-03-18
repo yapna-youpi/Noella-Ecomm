@@ -35,34 +35,55 @@ function Header() {
             
              {/* <--======= Header ======= --*/}
             <header id="header" className="fixed-top d-flex align-items-center">
-                <div className="container d-flex justify-content-between">
+                <div className="container  ">
+                    <div className="row nav">
 
-                    <div className="logo">
-                        <h1><Link to='/'><img className='logo' src={logo}  alt="logo Noella"/></Link></h1>
+                        <div className="col-md-3 logo">
+                           <h1><Link to='/'><span style={{color:"#59ab6e"}}>TheWay</span></Link></h1>
+                        </div>
+
+                        <div className="col-md-7 navig d-none d-md-block">
+                            <ul className='navig-li'>
+                                <li><Link to="/">Acceuil</Link></li>
+                                <li><Link to="/Business">Boutique</Link></li>
+                                <li><Link to="/Services">Services</Link></li>
+                                <li><Link to="Blog">Blog</Link></li>
+                                <li><Link to="/Help">Contact</Link></li>
+                                
+                            </ul>    
+                        </div>
+                        <div className="col-md-2 search">
+                            <div class="navbar align-self-center d-flex">
+                                <div class="d-lg-none flex-sm-fill mt-3 mb-4 col-7 col-sm-auto pr-3">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" id="inputMobileSearch" placeholder="Search ..." />
+                                        <div class="input-group-text">
+                                            <i class="fa fa-fw fa-search"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="nav-icon d-none d-lg-inline" href="#" data-bs-toggle="modal" data-bs-target="#templatemo_search">
+                                    <i class="fa fa-fw fa-search text-dark mr-2"></i>
+                                </a>
+                                <a class="nav-icon position-relative text-decoration-none" href="#">
+                                    <i class="fa fa-fw fa-cart-arrow-down text-dark mr-1"></i>
+                                    <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">7</span>
+                                </a>
+                                <a class="nav-icon position-relative text-decoration-none" href="#">
+                                    <i class="fa fa-fw fa-user text-dark mr-3"></i>
+                                    <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">+99</span>
+                                </a>
+                            </div>   
+                        </div>
                     </div>
+                        
 
-                    <nav id="navbar" className="navbar ">
-                        <ul>
-                            <li><Link className="nav-link scrollto" to="/">ACCEUIL</Link></li>
-                            <li><Link className="nav-link scrollto" to="/Business">BUSINESS</Link></li>
-                            <li><Link className="nav-link scrollto "  to="/Blog">BLOG</Link></li>
-                            <li style={{ color: 'wheat'}} className="dropdown"><span style={{ color: 'aqua'}}>COMPTE</span> <i className="bi bi-chevron-down"></i>
-                                <ul className='text-center list-open'>
-                                    <Link to="/SignUp" className='="list'><li className='icol'><FaUserCircle  />&nbsp;  INSCRIPTION</li></Link>
-                                    <Link to="/Login" className='="list'><li className='icol'><IoMdLogIn  />&nbsp; CONNEXION</li></Link>
-                                </ul>
-                            </li>
-                            <li><Link to="/Help">SUPPORT</Link></li>
-                        </ul>
+                    {/* !--End .navbar --> */}
+                </div>
 
-                    </nav>
-                    <div className="icon-contact d-none d-md-block">
-                        <a href="https://api.whatsapp.com/send?phone=237653184406"><div className="icon-whatsapp"><i className="icone" > <RiWhatsappFill /></i> &nbsp;:&nbsp; 653 - 18 - 44 - 06</div></a>
-                        <a href="tel:+237696626163"><div className="icon-whatsapp"><i className='icone'> <BsTelephoneOutboundFill /></i> &nbsp;:&nbsp; 653 - 18 - 44 - 06</div></a>
-                    </div>
-
-                        {/* !--End .navbar --> */}
-
+                <div className="icon-contact d-none d-md-block">
+                    <a href="https://api.whatsapp.com/send?phone=237653184406"><div className="icon-whatsapp"><i className="icone" > <RiWhatsappFill /></i> &nbsp;:&nbsp; 653 - 18 - 44 - 06</div></a>
+                    <a href="tel:+237696626163"><div className="icon-whatsapp"><i className='icone'> <BsTelephoneOutboundFill /></i> &nbsp;:&nbsp; 653 - 18 - 44 - 06</div></a>
                 </div>
             </header>
             <div className="container-fluid" style={{height:"80px"}}></div>
